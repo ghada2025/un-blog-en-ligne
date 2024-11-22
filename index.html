@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Blog Landing Page</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Trade+Winds&family=Young+Serif&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Trade+Winds&family=Young+Serif&display=swap" rel="stylesheet">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                darkMode: "class",
+                theme:{
+                    extend: {
+                        fontFamily: {
+                            fjallaone: ["Fjalla One", "sans-serif"],
+                            Roboto: ['Roboto', "sans-serif"]
+                        },
+                        colors: {
+                            'text': '#000000',
+                            'background': '#acc861',
+                            'primary': '#3a93b2',
+                            'secondary': '#2da1c4',
+                            'accent': '#eff1f2',
+                        },
+                    },
+                },
+            }
+        </script>
+    </head>
+
+    <body class="font-fjallaone">
+        <nav class="flex justify-between items-center bg-black text-white p-6 ">
+            <img src="./images/nomadic_matt_logo.webp" alt="nomadic logo" class="max-md:w-[30vw]">
+            <ul class="flex gap-12 max-md:hidden">
+                <li><a href="#blog" class="text-primary hover:text-white">BLOG</a></li>
+                <li><a href="#latest" class="text-white hover:text-primary">LATEST</a></li>
+                <li><a href="#popular" class="text-white hover:text-primary">POPULAR</a></li>
+                <li><a href="#travel" class="text-white hover:text-primary">TRAVEL</a></li>
+            </ul>
+            <img src="./images/menu.png" alt="menu" class="md:hidden max-md:w-[8vw]">
+        </nav>
+        <section id="blog">
+            <div id="latest">
+                <h1 class="text-center  uppercase my-[40px] text-[45px]">Latest Blog Posts </h1>
+                <div class="flex justify-evenly items-center mx-4 flex-wrap">
+                    <div class="flex flex-col gap-4 w-[350px]">
+                        <img src="./images/yi00zi8f.png">
+                        <h3>The Best eSIMs for Travelers</h3>
+                        <h4>Nov 22, 2024</h4>
+                    </div>
+                    <div class="flex flex-col gap-4 w-[350px] ">
+                        <img src="./images/13iu6bgq.png">
+                        <h3>World Nomads Annual Travel Insurance Review</h3>
+                        <h4>Nov 21, 2024</h4>
+                    </div>
+                    <div class="flex flex-col gap-4 w-[350px]">
+                        <img src="./images/g0j66ydo.png" >
+                        <h3>The Best eSIM for Traveling Japan</h3>
+                        <h4>Nov 20, 2024</h4>
+                    </div>
+                </div>
+                
+            </div>
+            <div id="popular">
+                <h1 class="text-center  uppercase my-[40px] text-[45px]">Popular Blog Posts</h1>
+                <div class="flex justify-evenly items-center mx-4 flex-wrap">
+                    <div class="flex flex-col gap-4 w-[350px]">
+                        <img src="./images/vpa2edpq.png">
+                        <h3>Chase Freedom Unlimited® Review</h3>
+                    </div>
+                    <div class="flex flex-col gap-4 w-[350px]">
+                        <img src="./images/lzd0i1jn.png">
+                        <h3>Capital One Venture X Rewards Credit Card Review</h3>
+                    </div>
+                    <div class="flex flex-col gap-4 w-[350px]">
+                        <img src="./images/9dszcxq4.png">
+                        <h3>My Suggested Black Forest Itinerary</h3>
+                    </div>
+                    <div class="flex flex-col gap-4 w-[350px]">
+                        <img src="./images/54kecy6p.png">
+                        <h3>The 6 Best Hotels in Melbourne</h3>
+                    </div>
+                    <div class="flex flex-col gap-4 w-[350px]">
+                        <img src="./images/ds3mpdv7.png">
+                        <h3>The 5 Best Hotels in Boston</h3>
+                    </div>
+                    <div class="flex flex-col gap-4 w-[350px]">
+                        <img src="./images/6cs66ojr.png">
+                        <h3>Are These The Best Travel Clothes? My Review of Unbound Merino</h3>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="flex justify-center items-center gap-10 my-14">
+                <div class="text-white bg-background p-4 rounded-md w-[45px] h-[45px] flex items-center justify-center">1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>...</div>
+                <div>123</div>
+            </div>
+        </section>
+        <section id="travel" class="flex justify-between items-center mt-14 bg-accent max-md:flex-col max-md:gap-4">
+            <div class="flex flex-col  gap-4 w-[40vw] p-5 max-md:w-full">
+                <h1 class="text-[30px] font-bold">GET YOUR  FREE TRAVEL STARTER KIT</h1>
+                <p class="w-[30vw] font-Roboto max-md:w-full" >Enter your email and get planning cheatsheets including a step by step checklist, packing list, tips cheat sheet, and more so you can plan like a pro!</p>
+                <input type="text" placeholder="First Name" class="h-[50px] rounded-[5px] font-Roboto p-5 border border-[#e3e3e3] text-[#e3e3e3] text-[14px]">
+                <input type="email" placeholder="Email Address" class="h-[50px] rounded-[5px] font-Roboto p-5 border border-[#e3e3e3] text-[#e3e3e3] text-[14px]">
+                <button class="bg-background text-white p-4">SEND ME TIPS!</button>
+            </div>
+            <div class="w-[50vw] max-md:w-full">
+                <img src="./images/etqm0n75.png">
+            </div>
+        </section>
+        <footer class=" bg-primary text-white" >
+            <div class="flex justify-between p-10 mb-2 mx-4 flex-wrap">
+                <div>
+                    <h3 class="font-[400] text-[22px] uppercase border-b-2 border-dotted border-white">Blog</h3>
+                    <ul class="font-Roboto mt-4 text-accent flex flex-col gap-2">
+                        <li>ALL blog</li>
+                        <li>popular blog</li>
+                        <li>Latest Blog</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-[400] text-[22px] uppercase border-b-2 border-dotted border-white">Travel Tips</h3>
+                    <ul  class="font-Roboto mt-4 text-accent flex flex-col gap-2">
+                        <li>Travel Tips</li>
+                        <li>Travel Guides</li>
+                        <li>Travel Blog</li>
+                        <li>Favorite Hostels</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-[400] text-[22px] uppercase border-b-2 border-dotted border-white">Book Your Trip</h3>
+                    <ul  class="font-Roboto mt-4 text-accent flex flex-col gap-2">
+                        <li>Get Accommodation</li>
+                        <li>Get Travel Insurance</li>
+                        <li>Get Credit Cards</li>
+                        <li>My Favorite Companies</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-[400] text-[22px] uppercase border-b-2 border-dotted border-white ">Follow Me On The Web</h3>
+                    <div  class="font-Roboto mt-4 text-accent flex  gap-5">
+                        <img src="./images/facebook-removebg-preview.png" width="40px" height="40px">
+                        <img src="./images/white-instagram-removebg-preview.png"width="30px" height="30px !important">
+                        <img src="./images/OIP-removebg-preview.png" width="30px" height="30px">
+                        <img src="./images/white-threads-removebg-preview.png" width="30px" height="30px">
+                    </div>
+                </div>
+            </div>
+            <div class="p-10 font-Roboto  flex justify-center items-center">
+                <p>&copy; 2024 My Blog. All rights reserved.</p>
+            </div>
+        </footer>
+    </body>
+</html>
